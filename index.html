@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assets/CSS/reset.css">
+        <link rel="stylesheet" href="Assets/CSS/style.css">
+        <title>Encriptador ONE</title>
+    </head>
+
+    <body id="body">
+        <header>
+            <img src="Assets/Imagenes/logo.png" alt="logo de alura">
+    </header>
+
+        <main>
+            <section class="input_section">
+                <div class="input_wrap">
+                    <textarea id="input" class="input" rows="8" autofocus placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+
+                <div class="actions">
+                    <p class="info_text"><span class="icon_small">
+                        <img src="Assets/Imagenes/exclamation.png" alt="signo de exclamación">
+                    </span> Solo letras minúsculas y sin acentos</p>
+
+                    <div id="buttons" class="buttons">
+                        <button class="boton1" onclick="mostrarEncriptado()">Encriptar</button>
+                        <button class="boton2" onclick="mostrarDesencriptado()" >Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="view_section" class="view_section">
+                <div class="image_wrap">
+                    <img src="Assets/Imagenes/munheco.png" alt="Imagen de persona">
+                </div>
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="boton_copiar" id="boton_copiar"  onclick="copiar()">copiar</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© Copyright MQ4ceros - 2022</p>
+            <div class="icon">
+                <a href="https://github.com/MQ4ceros"><img src="Assets/Imagenes/github.png" alt="github link"></a>
+            </div>
+            <div class="icon">
+                <a href="https://linkedin.com/in/mquinteros84"><img src="Assets/Imagenes/linkedin.png" alt="linkedin link"></a>
+            </div>
+        </footer>
+    </body>
+    
+    <script src="Assets/JS/encriptador.js"></script>
+</html>
